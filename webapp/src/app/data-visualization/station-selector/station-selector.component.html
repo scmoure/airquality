@@ -1,0 +1,5 @@
+<div>
+    <select (change)="onChange($event)" [(ngModel)]="this.selectedStation">
+      <option *ngFor="let station of stations | async" [ngValue]="station">{{ station.name }}</option>      
+    </select>
+</div>
